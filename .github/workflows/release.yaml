@@ -1,0 +1,56 @@
+name: Update and Vendor Rust Packages
+
+on:
+  schedule:
+    - cron: '0 0 * * *'  # Run daily at midnight
+  workflow_dispatch:     # Allow manual trigger
+
+jobs:
+  update-packages:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Install Rust toolchain
+        uses: dtolnay/rust-toolchain@nightly
+
+      - name: Install dependencies
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y jq
+
+      - name: Cache package versions
+        uses: actions/cache@v4
+        with:
+          path: ./versions_cache.json
+          key: ${{ runner.os }}-package-versions-${{ hashFiles('packages.json') }}
+          restore-keys: |
+            ${{ runner.os }}-package-versions-
+
+      - name: Run update script
+        run: |
+          chmod +x ./scripts/update_packages.sh
+          ./scripts/update_packages.sh
+
+      - name: Create release
+        if: success() && env.PACKAGES_UPDATED == 'true'
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          chmod +x ./scripts/create_release.sh
+          ./scripts/create_release.sh
+
+      - name: Commit changes
+        if: success() && env.PACKAGES_UPDATED == 'true'
+        env:
+          EMAIL: ${{ secrets.GIT_EMAIL }}
+          NAME: ${{ secrets.GIT_NAME }}
+        run: |
+          git config --local user.email "$EMAIL"
+          git config --local user.name "$NAME"
+          git add versions_cache.json
+          git commit -m "Update packages [skip ci]"
+          git push
