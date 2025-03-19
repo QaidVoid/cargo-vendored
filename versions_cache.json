@@ -1,4 +1,10 @@
 {
+  "kakoune-lsp": {
+    "version": "v18.1.2",
+    "repo": "kakoune-lsp/kakoune-lsp",
+    "last_checked": 1742386704,
+    "published_version": "v18.1.2-kakoune-lsp"
+  },
   "fselect": {
     "version": "0.8.9",
     "repo": "jhspetersson/fselect",
