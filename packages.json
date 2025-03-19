@@ -1,0 +1,14 @@
+[
+  {
+    "name": "kakoune-lsp",
+    "repo": "kakoune-lsp/kakoune-lsp"
+  },
+  {
+    "name": "fselect",
+    "repo": "jhspetersson/fselect"
+  },
+  {
+    "name": "rio",
+    "repo": "raphamorim/rio"
+  }
+]
