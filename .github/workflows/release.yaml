@@ -22,14 +22,6 @@ jobs:
           sudo apt-get update
           sudo apt-get install -y jq
 
-      - name: Cache package versions
-        uses: actions/cache@v4
-        with:
-          path: ./versions_cache.json
-          key: ${{ runner.os }}-package-versions-${{ hashFiles('packages.json') }}
-          restore-keys: |
-            ${{ runner.os }}-package-versions-
-
       - name: Run update script
         run: |
           chmod +x ./scripts/update_packages.sh
