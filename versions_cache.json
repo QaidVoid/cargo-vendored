@@ -6,15 +6,15 @@
     "published_version": "v18.1.3-kakoune-lsp"
   },
   "fselect": {
-    "version": "0.8.11",
+    "version": "0.8.12",
     "repo": "jhspetersson/fselect",
-    "last_checked": 1743300119,
-    "published_version": "v0.8.11-fselect"
+    "last_checked": 1747360901,
+    "published_version": "v0.8.12-fselect"
   },
   "rio": {
-    "version": "v0.2.15",
+    "version": "v0.2.16",
     "repo": "raphamorim/rio",
-    "last_checked": 1746756070,
-    "published_version": "v0.2.15-rio"
+    "last_checked": 1747361075,
+    "published_version": "v0.2.16-rio"
   }
 }
