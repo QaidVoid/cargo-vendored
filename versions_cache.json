@@ -1,9 +1,9 @@
 {
   "kakoune-lsp": {
-    "version": "v18.1.3",
+    "version": "v18.2.0",
     "repo": "kakoune-lsp/kakoune-lsp",
-    "last_checked": 1743300030,
-    "published_version": "v18.1.3-kakoune-lsp"
+    "last_checked": 1749002675,
+    "published_version": "v18.2.0-kakoune-lsp"
   },
   "fselect": {
     "version": "0.8.12",
@@ -12,9 +12,9 @@
     "published_version": "v0.8.12-fselect"
   },
   "rio": {
-    "version": "v0.2.16",
+    "version": "v0.2.17",
     "repo": "raphamorim/rio",
-    "last_checked": 1747361075,
-    "published_version": "v0.2.16-rio"
+    "last_checked": 1749002849,
+    "published_version": "v0.2.17-rio"
   }
 }
