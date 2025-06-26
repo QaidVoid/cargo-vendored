@@ -1,14 +1,18 @@
 [
   {
-    "name": "kakoune-lsp",
-    "repo": "kakoune-lsp/kakoune-lsp"
-  },
-  {
     "name": "fselect",
     "repo": "jhspetersson/fselect"
   },
   {
+    "name": "eww",
+    "repo": "elkowar/eww"
+  },
+  {
     "name": "rio",
     "repo": "raphamorim/rio"
+  },
+  {
+    "name": "yazi",
+    "repo": "sxyazi/yazi"
   }
 ]
