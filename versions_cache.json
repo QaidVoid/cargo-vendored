@@ -1,20 +1,26 @@
 {
-  "kakoune-lsp": {
-    "version": "v18.2.0",
-    "repo": "kakoune-lsp/kakoune-lsp",
-    "last_checked": 1749002675,
-    "published_version": "v18.2.0-kakoune-lsp"
-  },
   "fselect": {
     "version": "0.8.12",
     "repo": "jhspetersson/fselect",
     "last_checked": 1747360901,
     "published_version": "v0.8.12-fselect"
   },
+  "eww": {
+    "version": "v0.6.0",
+    "repo": "elkowar/eww",
+    "last_checked": 1750990038,
+    "published_version": "v0.6.0-eww"
+  },
   "rio": {
     "version": "v0.2.20",
     "repo": "raphamorim/rio",
     "last_checked": 1750471433,
     "published_version": "v0.2.20-rio"
+  },
+  "yazi": {
+    "version": "v25.5.31",
+    "repo": "sxyazi/yazi",
+    "last_checked": 1750990138,
+    "published_version": "v25.5.31-yazi"
   }
 }
