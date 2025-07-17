@@ -1,9 +1,9 @@
 {
   "fselect": {
-    "version": "0.8.12",
+    "version": "0.9.0",
     "repo": "jhspetersson/fselect",
-    "last_checked": 1747360901,
-    "published_version": "v0.8.12-fselect"
+    "last_checked": 1752718316,
+    "published_version": "v0.9.0-fselect"
   },
   "eww": {
     "version": "v0.6.0",
@@ -12,10 +12,10 @@
     "published_version": "v0.6.0-eww"
   },
   "rio": {
-    "version": "v0.2.20",
+    "version": "v0.2.21",
     "repo": "raphamorim/rio",
-    "last_checked": 1750471433,
-    "published_version": "v0.2.20-rio"
+    "last_checked": 1752718520,
+    "published_version": "v0.2.21-rio"
   },
   "yazi": {
     "version": "v25.5.31",
